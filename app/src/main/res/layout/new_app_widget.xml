@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Widget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/usd_widget"
+            android:text="@string/usd_widget"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textEUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/eur_widget"
+            android:text="@string/eur_widget"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textGBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/gbp_widget"
+            android:text="@string/gbp_widget"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textCHF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/chf_widget"
+            android:text="@string/chf_widget"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

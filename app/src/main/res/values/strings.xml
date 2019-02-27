@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Курс рубля ЦБ РФ</string>
+    <string name="refresh">Обновлено</string>
+    <string name="default_date">0000-00-00</string>
+    <string name="default_text">default text</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="usd_widget">USD: 00,0000</string>
+    <string name="eur_widget">EUR: 00,0000</string>
+    <string name="gbp_widget">GBP: 00,0000</string>
+    <string name="chf_widget">CHF: 00,0000</string>
+    <string name="tag_permission">Permission</string>
+</resources>

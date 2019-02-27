@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:alpha="1"
+    android:id="@+id/mainContainer"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+ />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?android:attr/textColorSecondary"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="9dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="setDate"
+            android:text="@string/default_date"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal|top"
+            android:text="@string/default_text"
+            android:textColor="@android:color/background_dark"
+            android:textSize="36sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:text="000,0000"
+            android:textColor="@color/primary_material_dark_1"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageUSD"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="60dp"
+            android:alpha="1"
+            app:srcCompat="@drawable/usd" />
+
+        <TextView
+            android:id="@+id/textEUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="120dp"
+            android:text="000,0000"
+            android:textColor="@color/primary_material_dark_1"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageEUR"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="120dp"
+            app:srcCompat="@drawable/eur" />
+
+        <TextView
+            android:id="@+id/textGBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="180dp"
+            android:text="000,0000"
+            android:textColor="@color/primary_material_dark_1"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageGBP"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/gbp" />
+
+
+        <TextView
+            android:id="@+id/textCHF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="240dp"
+            android:text="000,0000"
+            android:textColor="@color/primary_material_dark_1"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageCHF"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="240dp"
+            app:srcCompat="@drawable/chf" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="refreshRateHandler"
+        app:backgroundTint="?android:attr/textColorAlertDialogListItem"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="setDate"
+        app:backgroundTint="?android:attr/textColorAlertDialogListItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@android:drawable/ic_menu_today"
+        app:fabSize="mini"
+        />
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#000"-->
+        <!--android:alpha="0.3"-->
+        <!--android:elevation="10dp"-->
+        <!--&gt;-->
+
+      <!---->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+</android.support.constraint.ConstraintLayout>
+
